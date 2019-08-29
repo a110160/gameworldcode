@@ -41,6 +41,7 @@ export default {
     return{
       product:{},
       id:'',
+      isLoading:false,
     }
   },methods:{
       getProduct(id){
@@ -90,7 +91,7 @@ export default {
   flex-wrap: wrap;
 }
 .content .back{
-    margin-left: 900px;
+    /* margin-left: 900px; */
     margin-bottom: 30px;
     border:#454f58 1px solid;
     background-color:#454f58;
@@ -107,7 +108,6 @@ export default {
 .imgDiv{
   /* margin-top: 50px; */
   margin: auto;
-  width: 500px;
  /* height: 200px; */
 }
 .textDiv {

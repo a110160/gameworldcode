@@ -1,5 +1,6 @@
 <template>
   <div>
+    <loading :active.sync="isLoading"></loading> 
     <HomeNavbar></HomeNavbar>
     <div class="title">
       購物車內容
@@ -103,7 +104,7 @@
           </form>
       
       </div>
-  </ValidationObserver>
+    </ValidationObserver>
       <Footer></Footer>
   </div>
 </template>
@@ -203,6 +204,7 @@ export default {
 </script>
 
 <style scoped>
+
 .title{
   margin: auto;
   margin-top: 80px;

@@ -6,9 +6,9 @@
           <h1>Game World</h1>
         </router-link>
         <ul>
-          <router-link class='link' to='/admin/Products'>
+          <!-- <router-link class='link' to='/admin/Products'>
             <li>後台</li>
-          </router-link>
+          </router-link> -->
           
           <router-link  class='link' to='/cart'>
             <li>購物車</li>
@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -129,7 +129,7 @@
   line-height: 50px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .header ul li:hover{
   cursor :pointer;

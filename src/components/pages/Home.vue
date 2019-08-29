@@ -21,7 +21,7 @@
 					<ul class="wrap">
 						<li  v-for="item in filterDatas" :key='item.id'>
 							<img :src='item.imageUrl' @click="gatSingleProduct(item.id)">
-							<p>{{item.title}}</p>
+							<p @click="gatSingleProduct(item.id)">{{item.title}}</p>
 							<small>{{item.origin_price}}</small>
 							<h2>{{item.price}}</h2>
 							<button @click="add(item.id)">加入購物車</button>
@@ -113,6 +113,11 @@ export default {
 </script>
 
 <style scoped>
+
+img{
+	max-width: 100%;
+	height: auto;
+}
 .active{
 	background-color: #262b2f;
 }
@@ -152,7 +157,7 @@ body{
   line-height: 50px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .contentBar ul li:hover{
   cursor :pointer;
@@ -170,24 +175,24 @@ body{
 	margin: 5px;
 	width: 330px;
 	margin-bottom: 20px;
-	/* border: #262b2f 1px solid; */
-	/* height: 200px; */
-	/* background-color: #262b2f; */
 }
 .content_products ul li img{
 height: 200px;
 margin-bottom: 20px;
-transform:scale(1,1);
-transition: all 0.3s ease-out;
 box-shadow: 0px 5px 5px 0px #f5f5f5;
 }
 .content_products ul li img:hover{
 	cursor: pointer;
-	transform:scale(1.2,1.2);
-	box-shadow: 0px 5px 5px 0px #AAA7A4;
+	
 }
 .content_products ul li p{
-	padding-bottom: 10px;
+	font-size: 20px;
+	margin-bottom: 0;
+	/* padding-bottom: 10px; */
+}
+.content_products ul li p:hover{
+	cursor: pointer;
+	text-decoration: underline;
 }
 .content_products ul li small{
 	font-size: 14px;
